@@ -9,6 +9,19 @@ import {
 } from 'react-native';
 
 export default class SearchPage extends Component {
+    SearchPage(props) {
+        super(props);
+        this.state = {
+            searchString: 'london'
+        };
+    }
+
+    onSearchTextChanged(event) {
+        console.log('onSearchTextChanged');
+        this.setState({ searchString: event.nativeEvent.text });
+        console.log(this.state.searchString);
+    }
+
     render() {
         const styles = StyleSheet.create({
             description: {
@@ -61,12 +74,19 @@ export default class SearchPage extends Component {
             }
         });
 
+        // logging
+        console.log('SearchPage.render');
+
         /**
          * Wrap button Go and text field using flowRight style (flexDirection: row)
          * It horizontally places items in row
          *
          * + Without explcitly say width, we set flex property
          * flex: 4 - (input), flex:1 - button => 4:1 ratio
+         */
+
+        /**
+         * As for states we have onSearchTextChanged for onChange event
          */
         return (
             <View style={styles.container}>
@@ -79,6 +99,8 @@ export default class SearchPage extends Component {
                 <View style={styles.flowRight}>
                     <TextInput
                         style={styles.searchInput}
+                        value={this.state.searchString}
+                        onChange={this.onSearchTextChanged.bind(this)}
                         placeholder='Search via name or postcode'/>
                     <TouchableHighlight style={styles.button}
                         underlayColor='#99d9f4'>
