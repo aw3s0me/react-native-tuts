@@ -8,6 +8,7 @@ import {
     TouchableHighlight,
     ActivityIndicator
 } from 'react-native';
+import SearchResults from './SearchResults';
 
 /**
  * Create the query string based on parameters in data
@@ -33,7 +34,7 @@ function urlForQueryAndPage(key, value, pageNumber) {
         .join('&');
 
     return 'http://api.nestoria.co.uk/api?' + querystring;
-};
+}
 
 export default class SearchPage extends Component {
     constructor(props) {
@@ -81,7 +82,13 @@ export default class SearchPage extends Component {
     _handleResponse(response) {
         this.setState({ isLoading: false , message: '' });
         if (response.application_response_code.substr(0, 1) === '1') {
-            console.log('Properties found: ' + response.listings.length);
+            // Navigates to newly added SearchResults component
+            // Passes in the listings
+            this.props.navigator.push({
+                title: 'Results',
+                component: SearchResults,
+                passProps: {listings: response.listings}
+            });
         } else {
             this.setState({ message: 'Location not recognized; please try again.'});
         }
