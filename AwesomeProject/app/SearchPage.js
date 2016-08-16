@@ -54,9 +54,20 @@ export default class SearchPage extends Component {
                 borderColor: '#48BBEC',
                 borderRadius: 8,
                 color: '#48BBEC'
+            },
+            image: {
+                width: 217,
+                height: 138
             }
         });
 
+        /**
+         * Wrap button Go and text field using flowRight style (flexDirection: row)
+         * It horizontally places items in row
+         *
+         * + Without explcitly say width, we set flex property
+         * flex: 4 - (input), flex:1 - button => 4:1 ratio
+         */
         return (
             <View style={styles.container}>
                 <Text style={styles.description}>
@@ -78,6 +89,7 @@ export default class SearchPage extends Component {
                     underlayColor='#99d9f4'>
                     <Text style={styles.buttonText}>Location</Text>
                 </TouchableHighlight>
+                <Image source={require('../resources/house.png')} style={styles.image}/>
             </View>
         )
     }
