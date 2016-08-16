@@ -5,14 +5,43 @@ import {
     TextInput,
     View,
     Image,
-    TouchableHighlight
+    TouchableHighlight,
+    ActivityIndicator
 } from 'react-native';
 
+/**
+ * Create the query string based on parameters in data
+ * Then transforms data in required string format (name=value pairs &..)
+ * @param key
+ * @param value
+ * @param pageNumber
+ * @returns {string}
+ */
+function urlForQueryAndPage(key, value, pageNumber) {
+    var data = {
+        country: 'uk',
+        pretty: '1',
+        encoding: 'json',
+        listing_type: 'buy',
+        action: 'search_listings',
+        page: pageNumber
+    };
+    data[key] = value;
+
+    var querystring = Object.keys(data)
+        .map(key => key + '=' + encodeURIComponent(data[key]))
+        .join('&');
+
+    return 'http://api.nestoria.co.uk/api?' + querystring;
+};
+
 export default class SearchPage extends Component {
-    SearchPage(props) {
+    constructor(props) {
         super(props);
+        // keep track whether query is in progress
         this.state = {
-            searchString: 'london'
+            searchString: 'london',
+            isLoading: false
         };
     }
 
@@ -22,7 +51,32 @@ export default class SearchPage extends Component {
         console.log(this.state.searchString);
     }
 
+    /**
+     * Runs query
+     * @param query
+     * @private
+     */
+    _executeQuery(query) {
+        console.log(query);
+        this.setState({ isLoading: true });
+    }
+
+    /**
+     * Configures and initiates search query
+     */
+    onSearchPressed() {
+        var query = urlForQueryAndPage('place_name', this.state.searchString, 1);
+        this._executeQuery(query);
+    }
+
     render() {
+        // to indicate whether query is in progress
+        // ActivityIndicatorIOS is deprecated => use ActivityIndicator
+        const spinner = this.state.isLoading ?
+            ( <ActivityIndicator
+                size='large'/> ) :
+            ( <View/>);
+
         const styles = StyleSheet.create({
             description: {
                 marginBottom: 20,
@@ -103,7 +157,8 @@ export default class SearchPage extends Component {
                         onChange={this.onSearchTextChanged.bind(this)}
                         placeholder='Search via name or postcode'/>
                     <TouchableHighlight style={styles.button}
-                        underlayColor='#99d9f4'>
+                        underlayColor='#99d9f4'
+                        onPress={this.onSearchPressed.bind(this)}>
                         <Text style={styles.buttonText}>Go</Text>
                     </TouchableHighlight>
                 </View>
@@ -112,6 +167,7 @@ export default class SearchPage extends Component {
                     <Text style={styles.buttonText}>Location</Text>
                 </TouchableHighlight>
                 <Image source={require('../resources/house.png')} style={styles.image}/>
+                {spinner}
             </View>
         )
     }
