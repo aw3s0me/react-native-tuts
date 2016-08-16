@@ -7,6 +7,7 @@ import {
     ListView,
     Text
 } from 'react-native';
+import PropertyView from './PropertyView';
 
 let styles = StyleSheet.create({
     thumb: {
@@ -51,6 +52,12 @@ export default class SearchResults extends Component {
 
     rowPressed(propertyGuid) {
         var property = this.props.listings.filter(prop => prop.guid === propertyGuid)[0];
+
+        this.props.navigator.push({
+            title: "Property",
+            component: PropertyView,
+            passProps: {property: property}
+        });
     }
 
     renderRow(rowData, sectionID, rowID) {
