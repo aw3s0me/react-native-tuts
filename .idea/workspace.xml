@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="792436e3-ae97-4c63-8ca3-f871ecc671e0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AwesomeProject/index.android.js" afterPath="$PROJECT_DIR$/AwesomeProject/index.android.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AwesomeProject/app/SearchPage.js" afterPath="$PROJECT_DIR$/AwesomeProject/app/SearchPage.js" />
     </list>
     <ignored path="react-native-tuts.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.android.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.android.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AwesomeProject/index.android.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7846154" vertical-offset="0" max-vertical-offset="1040">
-              <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1037">
+              <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -40,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchPage.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SearchPage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AwesomeProject/app/SearchPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.92697173" vertical-offset="0" max-vertical-offset="1513">
+              <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -80,8 +79,8 @@
       <list>
         <option value="$PROJECT_DIR$/AwesomeProject/.gitignore" />
         <option value="$PROJECT_DIR$/AwesomeProject/app/PropertyFinderApp.js" />
-        <option value="$PROJECT_DIR$/AwesomeProject/app/SearchPage.js" />
         <option value="$PROJECT_DIR$/AwesomeProject/index.android.js" />
+        <option value="$PROJECT_DIR$/AwesomeProject/app/SearchPage.js" />
       </list>
     </option>
   </component>
@@ -499,12 +498,12 @@
       <option name="number" value="Default" />
       <updated>1471277772941</updated>
       <workItem from="1471277773632" duration="5533000" />
-      <workItem from="1471343305143" duration="4454000" />
+      <workItem from="1471343305143" duration="4584000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9987000" />
+    <option name="totallyTimeSpent" value="10117000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="10" width="905" height="1176" extended-state="0" />
@@ -649,21 +648,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AwesomeProject/app/SearchPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AwesomeProject/index.android.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7846154" vertical-offset="0" max-vertical-offset="1040">
-          <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1037">
+          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AwesomeProject/app/SearchPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.92697173" vertical-offset="0" max-vertical-offset="1513">
+          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
