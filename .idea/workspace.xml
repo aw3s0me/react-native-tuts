@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="792436e3-ae97-4c63-8ca3-f871ecc671e0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AwesomeProject/app/SearchPage.js" afterPath="$PROJECT_DIR$/AwesomeProject/app/SearchPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AwesomeProject/app/SearchResults.js" afterPath="$PROJECT_DIR$/AwesomeProject/app/SearchResults.js" />
     </list>
     <ignored path="react-native-tuts.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,8 +52,8 @@
       <file leaf-file-name="SearchResults.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AwesomeProject/app/SearchResults.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.114423074" vertical-offset="0" max-vertical-offset="1040">
-              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.47030184" vertical-offset="418" max-vertical-offset="1513">
+              <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -527,12 +527,12 @@
       <option name="number" value="Default" />
       <updated>1471277772941</updated>
       <workItem from="1471277773632" duration="5533000" />
-      <workItem from="1471343305143" duration="6606000" />
+      <workItem from="1471343305143" duration="6694000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12139000" />
+    <option name="totallyTimeSpent" value="12227000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="10" width="905" height="1176" extended-state="0" />
@@ -697,8 +697,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AwesomeProject/app/SearchResults.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.114423074" vertical-offset="0" max-vertical-offset="1040">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.47030184" vertical-offset="418" max-vertical-offset="1513">
+          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
           <folding />
         </state>
       </provider>
